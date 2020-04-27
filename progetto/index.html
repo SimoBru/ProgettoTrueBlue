@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html lang = "it">
+  <head>
+    <title>index.html</title>
+    <link rel = "stylesheet" type = "text/css" href = "style.css">
+    <meta charset = "UTF-8" />
+  </head>
+  <body>
+    <h1>Inserire i dati del progetto</h1>
+    <form>
+      <p>
+        <label>Titolo: </label><br>
+        <input type = "text"
+          id = "titolo"
+          value = ""
+          maxlength = "100"
+        />
+      </p>
+      <p>
+        <label>Descrizione: </label><br>
+        <textarea id = "descrizione"
+          rows = "3"
+          cols = "80"
+          maxlength = "500"></textarea>
+      </p>
+      <p>
+        <label>Stato: </label><br>
+        <select name="stato" >
+          <option value="inserito" selected="selected">Inserito </option>
+          <option value="elaborazione">In elaborazione </option>
+          <option value="completato">Completato </option>
+        </select>
+      </p>
+      <p>
+        <label>Data di scadenza: </label><br>
+        <input type="date" id="dataScadenza" name="Data di Scadenza">
+      </p>
+      <p>
+        <button type="button">Conferma</button>
+      </p>
+    </form>
+  </body>
+</html>
